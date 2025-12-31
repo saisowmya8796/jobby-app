@@ -1,0 +1,231 @@
+.job-section-profile-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .job-section-profile-details-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.render-group-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .render-group-items {
+    width: 38%; /* left column width */
+    max-width: 420px; /* keep it readable */
+  }
+}
+
+.responsive-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-items {
+    width: 62%; /* right column width */
+    min-width: 520px;
+  }
+}
+
+/* Desktop search bar at top of right column */
+.search-input-lg {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  max-width: 520px;
+  outline: none;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 15px; /* align with cards */
+  border-radius: 8px;
+  border: 1px solid #7e858e;
+  margin-bottom: 16px;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .search-input-lg {
+    display: none;
+  }
+}
+
+.search-lg {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  flex: 1 1 auto; /* fill available */
+  padding: 6px 16px;
+  width: auto; /* remove fixed 450px */
+}
+
+.search-button-lg {
+  background-color: #272727;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: none;
+  padding: 6px 12px;
+  width: auto; /* remove fixed 450px */
+}
+
+.search-icon-lg {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.job-details-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; /* vertical space between cards */
+  padding-left: 0px;
+  list-style-type: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .job-details-item-container {
+    align-items: sretch; /* cards stretch to right column width */
+  }
+}
+
+.no-jobs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+
+.no-jobs {
+  width: 300px;
+  max-width: 100%;
+}
+
+.no-jobs-heading {
+  font-size: 36px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.no-jobs-desc {
+  font-size: 18px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+
+.search-input-sm {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  width: 95%;
+  max-width: 660px;
+  outline: none;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 15px; /* align with cards */
+  border-radius: 8px;
+  border: 1px solid #7e858e;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-sm {
+    display: none;
+  }
+}
+
+.search-sm {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  flex: 1 1 auto; /* fill available */
+  padding: 6px 16px;
+  width: auto; /* remove fixed 450px */
+}
+
+.search-button-sm {
+  background-color: #272727;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: none;
+  padding: 6px 12px;
+  width: auto; /* remove fixed 450px */
+}
+
+.search-icon-sm {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-view-picture {
+  margin: 10px;
+  width: 250px;
+}
+
+.failure-heading {
+  font-size: 42px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #ffffff;
+}
+.failure-desc {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+
+.jobs-failure-button {
+  background-color: #4f46e5;
+  border: none;
+  width: 150px;
+  padding: 12px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #ffffff;
+}

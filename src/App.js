@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, Navigate} from 'react-router-dom' // 🔄 CHANGED
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import LoginForm from './components/LoginForm'
+import Home from './components/Home'
+import Jobs from './components/Jobs'
+import JobItemDetails from './components/JobItemDetails'
+import NotFound from './components/NotFound'
+import ProtectedRoute from './components/ProtectedRoute'
 
-export default App;
+import './App.css'
+
+const App = () => (
+  <Routes> {/* 🔄 CHANGED */}
+    <Route path="/login" element={<LoginForm />} /> {/* 🔄 CHANGED */}
+    <Route element={<ProtectedRoute />}> {/* 🔄 CHANGED */}
+      <Route path="/" element={<Home />} />
+      <Route path="/jobs" element={<Jobs />} />
+      <Route path="/jobs/:id" element={<JobItemDetails />} />
+    </Route>
+    <Route path="/not-found" element={<NotFound />} /> {/* 🔄 CHANGED */}
+    <Route path="*" element={<Navigate to="/not-found" />} /> {/* 🔄 CHANGED */}
+  </Routes>
+)
+
+export default App

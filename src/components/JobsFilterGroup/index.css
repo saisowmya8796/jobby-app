@@ -1,0 +1,58 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-container {
+    margin-right: 30px;
+  }
+}
+
+.separator-line {
+  border: 1px solid #7e858e;
+  width: 100%;
+}
+
+.filter-section {
+  margin: 5px 0px;
+}
+
+.filter-heading {
+  color: #f1f5f9;
+  font-size: 28px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  gap: 20px;
+  margin: 40px 10px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 70%;
+}
+
+.filter-input {
+  background-color: #f1f5f9;
+  width: 30px; /* control size here */
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.filter-label {
+  color: #cbd5e1;
+  font-size: 24px;
+  font-family: 'Roboto';
+}
